@@ -79,3 +79,5 @@ const createGalleryItem = ({ preview, original, description }) => {
 };
 
 galleryContainer.innerHTML = images.map(createGalleryItem).join('');
+
+new SimpleLightbox('.gallery a');
