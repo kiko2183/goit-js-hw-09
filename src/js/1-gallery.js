@@ -1,3 +1,5 @@
+import SimpleLightbox from 'simplelightbox';
+
 const images = [
   {
     preview:
@@ -77,15 +79,3 @@ const createGalleryItem = ({ preview, original, description }) => {
 };
 
 galleryContainer.innerHTML = images.map(createGalleryItem).join('');
-
-galleryContainer.addEventListener('click', event => {
-  event.preventDefault();
-  const galleryItem = event.target.closest('.gallery-item');
-  if (!galleryItem) return;
-
-  const originalImageSrc =
-    galleryItem.querySelector('.gallery-image').dataset.source;
-
-  const modal = basicLightbox.create(`<img src="${originalImageSrc}" alt=""/>`);
-  modal.show();
-});
