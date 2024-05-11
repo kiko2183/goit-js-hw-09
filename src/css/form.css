@@ -22,12 +22,12 @@ label {
     max-height: 80px;
 }
 
-input:hover {
-    border-color: #000000
+.inp:hover {
+    border:#000000  ;
 }
 
 .inp:focus {
-    border-color: #808080;
+    border:#808080;
 }
 
 button{
@@ -38,6 +38,8 @@ button{
     gap:10px;
     background-color: #4E75FF;
     font-family: "Montserrat", sans-serif;
+    border: none;
+    color: #fff;
 }
 
 button:hover {
